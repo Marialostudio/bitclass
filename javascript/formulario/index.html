@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>Vanilla</title>
 </head>
 <body>
     <main class="container">
-        <section class="fs-1rem">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem sunt enim sapiente. Aperiam vel id excepturi mollitia maxime quaerat deserunt nesciunt modi cumque provident, at iure quasi placeat alias.</p>
-        </section>
-        <hr>
-        <section class="fs-1em">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur id, praesentium aut, asperiores expedita ad, itaque accusamus consequatur impedit excepturi eaque quibusdam pariatur iure. Unde magni laborum tenetur ullam.</p>
+        <section>
+            <h1>Vanilla Sample Page</h1>
+            <hr />
+            <p class="fs-1rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem sunt enim sapiente. Aperiam vel id excepturi mollitia maxime quaerat deserunt nesciunt modi cumque provident, at iure quasi placeat alias.
+            </p>
+            <p class="fs-1em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur id, praesentium aut, asperiores expedita ad, itaque accusamus consequatur impedit excepturi eaque quibusdam pariatur iure. Unde magni laborum tenetur ullam.</p>
         </section>
         <hr>
         <section>
-            <form action="" class="signup" id="signUp"></form>
+            <form action="" class="signup" id="signUp">
+                <fieldset>
+                    <legend>Sign Up Form</legend>
+                    <label for="name">Enter your name</label>
+                    <input type="text" name="name" id="name" />
+                    <label for="email">Enter your email</label>
+                    <input type="email" name="email" id="email" />
+                    <label for="password">Enter your password</label>
+                    <input type="password" name="password" id="password" />
+                    <label for="passwordConfirm">Confirm your password</label>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm" />
+                </fieldset>
+                <button type="submit">Sing Up</button>
+            </form>
         </section>
 
     </main>
-    
+    <script src="./js/main.js"></script>
 </body>
 </html>
