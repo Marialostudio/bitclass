@@ -16,13 +16,11 @@
 <body>
     <main class="container">
         <section>
-            <h1>Vanilla Sample Page</h1>
+            <h1>Vanilla Sign Up Page</h1>
             <hr />
-            <p class="fs-1rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem sunt enim sapiente. Aperiam vel id excepturi mollitia maxime quaerat deserunt nesciunt modi cumque provident, at iure quasi placeat alias.
-            </p>
-            <p class="fs-1em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur id, praesentium aut, asperiores expedita ad, itaque accusamus consequatur impedit excepturi eaque quibusdam pariatur iure. Unde magni laborum tenetur ullam.</p>
+
         </section>
-        <hr>
+        
         <section class="user-access">
             <div class="container fluid">
                 <div class="container col-12 text-center">
@@ -37,13 +35,13 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="col signup-area">
-                            <h5 class="title-h5">Not part yet? Create your account!</h5>
+                        <div class="col home-area">
+                            <h5 class="title-h5">Do you retract? Come back to the home.</h5>
                             <hr />
-                            <a href="./signup.html">
-                            <div class="button-link-signup">
-                                <i class="fa-solid fa-user-plus"></i>
-                                <h3 class="title-h3">Sign Up</h3>
+                            <a href="./index.html">
+                            <div class="button-link-home">
+                                <i class="fa-solid fa-house"></i>
+                                <h3 class="title-h3">Home</h3>
                             </div>
                             </a>
                         </div>
@@ -52,6 +50,29 @@
             </div>
         </section>
 
+
+        <section>
+            <form action="" class="signup" id="signUp">
+                <fieldset>
+                    <legend>Please complete the information</legend>
+                    <label for="name">Enter your name</label>
+                    <input type="text" name="name" id="name"  required />
+                    <div id="nameWarning" class="warning"></div>
+                    <label for="email">Enter your email</label>
+                    <input type="email" name="email" id="email"  required />
+                    <div id="emailWarning" class="warning"></div>
+                    <label for="password">Enter your password</label>
+                    <input type="password" name="password" id="password"  required />
+                    <div id="passwordWarning" class="warning"></div>
+                    <label for="passwordConfirm">Confirm your password</label>
+                    <input type="password" name="passwordConfirm" id="passwordConfirm"  required />
+                    <div id="passwordConfirmWarning" class="warning"></div>
+                </fieldset>
+                <button type="submit" name="submitButton" disabled>Sing Up</button>
+            </form>
+        </section>
+
     </main>
+    <script src="./js/signup.js"></script>
 </body>
 </html>

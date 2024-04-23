@@ -58,6 +58,67 @@ label {
     font-style: normal;
 }
 /* SECTION */
+.user-access {
+    margin: 20px 0;
+    padding: 30px;
+    background-color: lightblue;
+
+}
+
+.login-area {
+    background-color:lightsalmon;
+    padding: 20px 0;
+}
+
+.signup-area {
+    background-color: aquamarine;
+    padding: 20px 0;
+}
+
+.home-area {
+    background-color:mediumpurple ;
+    padding: 20px 0;
+}
+
+.button-link-login {
+    background-color: coral;
+    display: inline-block;
+    padding: 16px 22px;
+    border-radius: 3px;
+    color: black;
+}
+
+.button-link-login:hover {
+    mix-blend-mode: multiply;
+    color: white;
+}
+
+.button-link-signup {
+    background-color: mediumaquamarine;
+    display: inline-block;
+    padding: 16px;
+    border-radius: 3px;
+    color: black;
+}
+
+.button-link-signup:hover {
+    mix-blend-mode: multiply;
+    color: white;
+}
+
+.button-link-home {
+    background-color:blueviolet;
+    display: inline-block;
+    padding: 16px 22px;
+    border-radius: 3px;
+    color: black;
+}
+
+.button-link-home:hover {
+    mix-blend-mode: multiply;
+    color: white;
+}
+
 .signup fieldset {
     display: flex;
     flex-direction: column;
@@ -67,6 +128,7 @@ label {
     border-style: dashed;
     border-color: silver;
 }
+
 .signup legend {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
@@ -75,6 +137,7 @@ label {
     font-style: normal;
     padding: 0.5em;
 }
+
 .signup button {
     width: -webkit-fill-available;
     margin: 2rem 1rem;
@@ -94,4 +157,10 @@ label {
 .signup button:hover {
     background-color:mediumspringgreen;
     font-weight: 700;
+}
+
+.warning {
+    font-size: 0.8em;
+    font-weight: 600;
+    color: crimson;
 }
