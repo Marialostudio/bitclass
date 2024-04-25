@@ -126,8 +126,12 @@ function setAllowSubmit() {
     credentials.passwordConfirmValid;
     if (allowSubmit) {
         $signUp.submitButton.removeAttribute('disabled');
+        $signUp.submitButton.classList.add('button-active');
+        $signUp.submitButton.classList.remove('button-disabled');
     } else {
         $signUp.submitButton.setAttribute('disabled', true);
+        $signUp.submitButton.classList.add('button-disabled');
+        $signUp.submitButton.classList.remove('button-active');
     }
 }
 
@@ -141,9 +145,9 @@ function handleSubmit(event) {
             email: credentials.email,
             password: credentials.password,
         });
-        console.log('send data to the backend for precsessing');
+        console.log('send data to the backend for preccessing');
         $signUp.reset();
-        window.location.replace('http://127.0.0.1:5500/javascript/vanillaproject/index.html');
+        /* window.location.replace('http://127.0.0.1:5500/javascript/vanillaproject/index.html'); */
         } else {
             console.log('notify the user and do not allow sending data');
         }

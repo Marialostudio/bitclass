@@ -16,39 +16,48 @@
 <body>
     <main class="container">
         <section>
-            <h1>Vanilla Home Page</h1>
+            <h1>Vanilla Private Page</h1>
             <hr />
-            <p class="fs-1rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem sunt enim sapiente. Aperiam vel id excepturi mollitia maxime quaerat deserunt nesciunt modi cumque provident, at iure quasi placeat alias.
-            </p>
-            <p class="fs-1em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur id, praesentium aut, asperiores expedita ad, itaque accusamus consequatur impedit excepturi eaque quibusdam pariatur iure. Unde magni laborum tenetur ullam.</p>
+
         </section>
-        <hr>
+        
         <section class="user-access">
             <div class="container fluid">
                 <div class="container col-12 text-center">
                     <div class="row row-cols-1 row-cols-sm-2">
-                        <div class="col login-area">
-                            <h5 class="title-h5">Do you already have an account?</h5>
+                        <div class="col profile-area">
+                            <h5 class="title-h5">See your account details.</h5>
                             <hr />
-                            <a href="./login.html">
-                                <div class="button-link-login">
-                                    <i class="fa-solid fa-user-check"></i>
-                                    <h3 class="title-h3">Log In</h3>
-                                </div>
+                            <a href="./index.html">
+                            <div class="button-link-profile">
+                                <i class="fa-solid fa-user"></i>
+                                <h3 class="title-h3">Profile</h3>
+                            </div>
                             </a>
                         </div>
-                        <div class="col signup-area">
-                            <h5 class="title-h5">Not part yet? Create your account!</h5>
+                        <div class="col logout-area">
+                            <h5 class="title-h5">Have you done?</h5>
                             <hr />
-                            <a href="./signup.html">
-                            <div class="button-link-signup">
-                                <i class="fa-solid fa-user-plus"></i>
-                                <h3 class="title-h3">Sign Up</h3>
+                            <a href="./login.html">
+                            <div class="button-link-logout">
+                                <i class="fa-solid fa-right-from-bracket"></i>
+                                <h3 class="title-h3">Log Out</h3>
                             </div>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+
+
+        <section class="user-access">
+            <div class="account-details">
+                <table>
+                    <td>
+
+                    </td>
+                </table>
             </div>
         </section>
 
@@ -58,5 +67,6 @@
         </footer>
 
     </main>
+    <script src="./js/login.js"></script>
 </body>
 </html>

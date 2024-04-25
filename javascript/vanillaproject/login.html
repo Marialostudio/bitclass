@@ -16,25 +16,23 @@
 <body>
     <main class="container">
         <section>
-            <h1>Vanilla Home Page</h1>
+            <h1>Vanilla Log In Page</h1>
             <hr />
-            <p class="fs-1rem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias dolorem sunt enim sapiente. Aperiam vel id excepturi mollitia maxime quaerat deserunt nesciunt modi cumque provident, at iure quasi placeat alias.
-            </p>
-            <p class="fs-1em">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem tenetur id, praesentium aut, asperiores expedita ad, itaque accusamus consequatur impedit excepturi eaque quibusdam pariatur iure. Unde magni laborum tenetur ullam.</p>
+
         </section>
-        <hr>
+        
         <section class="user-access">
             <div class="container fluid">
                 <div class="container col-12 text-center">
                     <div class="row row-cols-1 row-cols-sm-2">
-                        <div class="col login-area">
-                            <h5 class="title-h5">Do you already have an account?</h5>
+                        <div class="col home-area">
+                            <h5 class="title-h5">Do you retract? Come back to the home.</h5>
                             <hr />
-                            <a href="./login.html">
-                                <div class="button-link-login">
-                                    <i class="fa-solid fa-user-check"></i>
-                                    <h3 class="title-h3">Log In</h3>
-                                </div>
+                            <a href="./index.html">
+                            <div class="button-link-home">
+                                <i class="fa-solid fa-house"></i>
+                                <h3 class="title-h3">Home</h3>
+                            </div>
                             </a>
                         </div>
                         <div class="col signup-area">
@@ -52,11 +50,28 @@
             </div>
         </section>
 
+
+        <section class="user-access">
+            <form action="" id="logIn">
+                <fieldset>
+                    <legend>Please enter your credentials</legend>
+                    <label for="email">Your email</label>
+                    <input type="email" name="email" id="email"  required />
+                    <div id="emailWarning" class="warning"></div>
+                    <label for="password">Your password</label>
+                    <input type="password" name="password" id="password"  required />
+                    <div id="passwordWarning" class="warning"></div>
+                </fieldset>
+                <button type="submit" name="submitButton" disabled>Log In</button>
+            </form>
+        </section>
+
         <footer>
             <hr />
             <p>Code crafted by <a href="https://github.com/Marialostudio" target="_blank" rel="noopener noreferrer">Marialostudio</a> at BIT Bootcamp Class - 2024</p>
         </footer>
 
     </main>
+    <script src="./js/login.js"></script>
 </body>
 </html>

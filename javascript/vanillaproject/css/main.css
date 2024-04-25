@@ -40,6 +40,9 @@ p {
 hr {
     margin: 2rem 0;
 }
+form {
+    background-color: lavender;
+}
 input {
     padding: 0.7rem;
     font-family: "Playfair Display", serif;
@@ -57,11 +60,14 @@ label {
     font-weight: 400;
     font-style: normal;
 }
+footer {
+    margin-top: 5rem;
+}
 /* SECTION */
 .user-access {
     margin: 20px 0;
     padding: 30px;
-    background-color: lightblue;
+    background-color: #f8f9fa;
 
 }
 
@@ -77,6 +83,16 @@ label {
 
 .home-area {
     background-color:mediumpurple ;
+    padding: 20px 0;
+}
+
+.profile-area {
+    background-color:hotpink;
+    padding: 20px 0;
+}
+
+.logout-area {
+    background-color: lightgoldenrodyellow;
     padding: 20px 0;
 }
 
@@ -119,17 +135,42 @@ label {
     color: white;
 }
 
-.signup fieldset {
+.button-link-profile {
+    background-color:mediumvioletred;
+    display: inline-block;
+    padding: 16px 22px;
+    border-radius: 3px;
+    color: black;
+}
+
+.button-link-profile:hover {
+    mix-blend-mode: multiply;
+    color: white;
+}
+
+.button-link-logout {
+    background-color:burlywood;
+    display: inline-block;
+    padding: 16px 22px;
+    border-radius: 3px;
+    color: black;
+}
+
+.button-link-logout:hover {
+    mix-blend-mode: multiply;
+    color: white;
+}
+
+fieldset {
     display: flex;
     flex-direction: column;
     gap: 0.7rem;
     padding: 2rem 3rem;
-    background-color: lavender;
     border-style: dashed;
     border-color: silver;
 }
 
-.signup legend {
+legend {
     font-family: "Playfair Display", serif;
     font-size: 2rem;
     font-optical-sizing: auto;
@@ -138,12 +179,12 @@ label {
     padding: 0.5em;
 }
 
-.signup button {
+.button-active {
     width: -webkit-fill-available;
-    margin: 2rem 1rem;
-    padding: 1rem;
+    margin: 2rem 2.7rem;
+    padding: 1.5rem;
     border-radius: 99px;
-    border-width: thin;
+    border-width: 0;
     background-color: dodgerblue;
     color: white;
     font-family: "Mulish", sans-serif;
@@ -154,7 +195,7 @@ label {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
-.signup button:hover {
+.button-active:hover {
     background-color:mediumspringgreen;
     font-weight: 700;
 }
@@ -163,4 +204,41 @@ label {
     font-size: 0.8em;
     font-weight: 600;
     color: crimson;
+}
+
+.button-disabled {
+    width: -webkit-fill-available;
+    margin: 2rem 2.7rem;
+    padding: 1.5rem;
+    border-radius: 99px;
+    border-width: 0;
+    background-color: #c9c9c9;
+    color: rgb(132, 132, 132);
+    font-family: "Mulish", sans-serif;
+    font-size: 0.9em;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer p {
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.03rem;
+    color: gray;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+footer a {
+    text-decoration: none;
+    color:olivedrab;
+    font-weight: 700;
+}
+
+footer a:hover {
+    text-decoration: none;
+    color:hotpink;
 }
