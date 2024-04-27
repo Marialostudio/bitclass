@@ -1,0 +1,49 @@
+/* GOLBAL */
+
+body {
+    background-color:aliceblue;
+}
+
+/* GENERAL */
+
+h1 {
+    font-family: 'Playfair Display', sans-serif;
+    font-size: 4rem;
+    font-weight: 700;
+}
+table thead {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+table tbody {
+    font-family: 'Mulish', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+img {
+    width: 100px;
+    height: auto;
+}
+
+button {
+    background-color: lightsalmon;
+    padding: 0.4rem 2rem;
+    margin: 0.3rem;
+    border: solid 2px lightsalmon;
+    border-radius: 60px;
+}
+
+button:hover {
+    background-color: rgba(255, 160, 122, 0.802);
+}
+
+/* SECTION */
+.banner {
+    background-image: url("../assets/bg-guideline-4.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 1rem;
+}
